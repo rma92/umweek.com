@@ -1,0 +1,932 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>E-Week 2014</title>
+<style>
+.date
+{
+  font-weight: bold;
+  display: block;
+}
+p
+{
+  margin-left:20px;
+}
+.org
+{
+  font-size: 18px;
+  font-family: "Arial Narrow";
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+body
+{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url('wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+}
+h1
+{
+  margin-top: 110px;
+}
+.section-title-anchorbox
+{
+  padding-top: 0px;
+}
+.bodycontainer
+{
+  min-width: 200px;
+  max-width:800px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+h3
+{
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+h3.especialday
+{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom:0px;
+  letter-spacing: 6px;
+}
+p.especialp
+{
+  margin:0px;
+}
+h2
+{
+  font-family: "Broadway";
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 4px;
+}
+h1
+{
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+}
+.headroom
+{
+  position: fixed;
+  background-color: #fff;
+  width:100%;
+  padding-top: 10px;
+  height: 64px;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 23;
+}
+.linksholder
+{
+  position:fixed;
+  background-color: #fff;
+  width: 100%;
+  right: 0;
+  top:64px;
+  height:20px;
+  left: 0;
+  z-index:23;
+  padding: 0;
+}
+.linksholder ul
+{
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 8px;
+  padding-top: 2px;
+}
+.linksholder li
+{
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-right: 2px;
+  border: 1px solid #000;
+  border-radius: 6px 20px;
+  color: #000;
+}
+.linksholder li a
+{
+  text-decoration: none;
+  color: inherit; 
+}
+.maintitle
+{
+  font-family: Impact;
+  font-size:48px;
+  font-weight: thin;
+}
+.maintitleyear
+{
+  font-family: Impact;
+  font-size:17px;
+  color:blue;
+  padding:0px;
+  margin:0px;
+  top:0px;
+ /* 
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  */
+}
+.sponsor1
+{
+  height:150px;
+}
+.sponsor2
+{
+  height:86px;
+}
+.headroom img
+{
+  float: right;
+}
+.bodyspacer
+{
+  height: 80px;
+}
+.bodyheader
+{
+  height: 520px;
+  max-width: 800px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bodyheader .subtitle1, .bodyheader .subtitle2
+{
+  background: rgba(193, 56, 50, 0.85);
+  text-shadow: 4px 4px #005030;
+  font-weight: 600;
+  font-family: impact;
+  letter-spacing: 5px; 
+  color: white;
+  font-size: 32px;
+  padding: 8px;
+  width: 340px;
+  font-style: italic;
+}
+.bodyheader .subtitle1
+{
+  left: 24px;
+}
+.bodyheader .subtitle2
+{
+  margin-top: 320px;
+  float:right;
+
+}
+
+.teamlist
+{
+  list-style: none;
+}
+.teamlist li
+{
+  display: inline-block;
+  text-align: center;
+  width:140px;
+  height:150px;
+}
+.teamlist img
+{
+  width:100px;
+  height:100px;
+  border-radius: 100%;
+  border: 6px double #AAA;
+}
+.teamlistbig
+{
+  list-style: none;
+}
+.teamlistbig li
+{
+  display: inline-block;
+  text-align: center;
+  width:340px;
+  padding-bottom: 60px;
+}
+.teamlistbig li, .teamlistbig li p
+{
+  padding-bottom: 0px;
+
+}
+.teamlistbig li p:nth-of-type(1)
+{
+  font-family: sans-serif;
+  font-size: 36px;
+  color: #f47321;
+  text-shadow: 2px 2px #005030;
+}
+.teamlistbig li p:nth-of-type(2)
+{
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.teamlistbig li p:nth-of-type(3)
+{
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.teamlistbig img
+{
+  width:300px;
+  height: 300px;
+  float:left;
+  border-radius: 100%;
+  border: 6px double #AAA;
+}
+
+#animationbox
+{
+  background-color: #000;
+  width:100%;
+  height: 100%;
+  position: fixed;
+  width:100%;
+  padding-top: 10px;
+  height: 100%;
+  right: 0;
+  left: 0;
+  top: 64px;
+  display:none;
+}
+
+
+/**ANIMATION STUFF**/
+#anic, #anigear, #anie
+{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top:190px;
+}
+#anic
+{
+  background: rgba(0, 0, 0, 0) url('ani_cx.svg') no-repeat left top;
+  background-position: 22px 0px;
+  background-size: 244px 302px;
+  left: 50%;
+  margin-left: -326px;
+}
+#anigear
+{
+  /* background: rgba(0, 0, 0, 0) url('ani_gear.png') no-repeat left top; */
+  background: rgba(0, 0, 0, 0) url('ani_gear.svg') no-repeat left top;
+  background-size: auto 100%;
+  left: 50%;
+  margin-left: -150px;
+  z-index: 1;
+}
+#anie
+{
+  background: rgba(0, 0, 0, 0) url('ani_ex.svg') no-repeat left top;
+  background-position: 36px -1px;
+  background-size: 245px 304px;
+  right: 50%;
+  margin-right: -323px;
+}
+.bgx{
+  animation: bgF1 ease-out 10s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  -o-animation: bgF1 ease-out 10s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -moz-animation: bgF1 ease-out 10s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -webkit-animation: bgF1 ease-out 10s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -ms-animation: bgF1 ease-out 10s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+}
+.bgx{
+  position: absolute;
+  opacity:
+  margin: 0;
+  right: 0;
+  top:0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+
+}
+@keyframes bgF1{
+  0% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  65% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+@-moz-keyframes bgF1{
+  0% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  65% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+@-o-keyframes bgF1{
+  0% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  65% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+@-webkit-keyframes bgF1{
+  0% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  65% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+@-ms-keyframes bgF1{
+  0% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  65% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+
+#anigear{ 
+  animation: animationFrames1 ease-out 5s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  -webkit-animation: animationFrames1 ease-out 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -moz-animation: animationFrames1 ease-out 5s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -o-animation: animationFrames1 ease-out 5s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -ms-animation: animationFrames1 ease-out 5s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+}
+
+#anie{
+  animation: animationFrames2 ease-out 5s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  -webkit-animation: animationFrames2 ease-out 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -moz-animation: animationFrames2 ease-out 5s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -o-animation: animationFrames2 ease-out 5s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -ms-animation: animationFrames2 ease-out 5s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+}
+
+#anic{
+  animation: animationFrames3 ease-out 5s;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  -webkit-animation: animationFrames3 ease-out 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -moz-animation: animationFrames3 ease-out 5s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -o-animation: animationFrames3 ease-out 5s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -ms-animation: animationFrames3 ease-out 5s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+}
+
+@keyframes animationFrames1{
+  40% {
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+
+  }
+  100% {
+    opacity:1;
+    transform:  rotate(720deg) scaleX(1) scaleY(1) ;
+  }
+}
+@-moz-keyframes animationFrames1{
+  40% {
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  rotate(720deg) scaleX(1) scaleY(1) ;
+  }
+}
+@-webkit-keyframes animationFrames1 {
+  40% {
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  rotate(720deg) scaleX(1) scaleY(1) ;
+  }
+}
+@-o-keyframes animationFrames1 {
+  40% {
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  rotate(720deg) scaleX(1) scaleY(1) ;
+  }
+}
+@-ms-keyframes animationFrames1 {
+  40% {
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  rotate(720deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+
+@keyframes animationFrames2{
+  0%, 40% {
+    opacity:0;
+    right: 330px;
+  }
+  45%
+  {
+    opacity:1;
+    right: 330px; 
+  }  100% {
+    opacity:1;
+    right: 50%;
+  }
+}
+@-ms-keyframes animationFrames2{
+  0%, 40% {
+    opacity:0;
+    right: 330px;
+  }
+  45%
+  {
+    opacity:1;
+    right: 330px; 
+  }  100% {
+    opacity:1;
+    right: 50%;
+  }
+
+}
+@-o-keyframes animationFrames2{
+  0%, 40% {
+    opacity:0;
+    right: 330px;
+  }
+  45%
+  {
+    opacity:1;
+    right: 330px; 
+  }  100% {
+    opacity:1;
+    right: 50%;
+  }
+
+}
+@-webkit-keyframes animationFrames2{
+  0%, 40% {
+    opacity:0;
+    right: 330px;
+  }
+  45%
+  {
+    opacity:1;
+    right: 330px; 
+  }  100% {
+    opacity:1;
+    right: 50%;
+  }
+}
+@-moz-keyframes animationFrames2{
+  0%, 40% {
+    opacity:0;
+    right: 330px;
+  }
+  45%
+  {
+    opacity:1;
+    right: 330px; 
+  }
+  100% {
+    opacity:1;
+    right: 50%;
+  }
+}
+
+@keyframes animationFrames3{
+  0%, 40% {
+    opacity:0;
+    left:320px;
+  }
+  45%
+  {
+    opacity: 1;
+    left:320px;
+  }
+  100% {
+    opacity:1;
+    left: 50%;
+  }
+}
+@-ms-keyframes animationFrames3{
+  0%, 40% {
+    opacity:0;
+    left:320px;
+  }
+  45%
+  {
+    opacity: 1;
+    left:320px;
+  }
+  100% {
+    opacity:1;
+    left: 50%;
+  }
+}
+@-o-keyframes animationFrames3{
+  0%, 40% {
+    opacity:0;
+    left:320px;
+  }
+  45%
+  {
+    opacity: 1;
+    left:320px;
+  }
+  100% {
+    opacity:1;
+    left: 50%;
+  }
+}
+@-webkit-keyframes animationFrames3{
+  0%, 40% {
+    opacity:0;
+    left:320px;
+  }
+  45%
+  {
+    opacity: 1;
+    left:320px;
+  }
+  100% {
+    opacity:1;
+    left: 50%;
+  }
+}
+@-moz-keyframes animationFrames3{
+  0%, 40% {
+    opacity:0;
+    left:320px;
+  }
+  45%
+  {
+    opacity: 1;
+    left:320px;
+  }
+  100% {
+    opacity:1;
+    left: 50%;
+  }
+}
+/**END ANIMATION STUFF**/
+</style>
+</head>
+<body>
+<div class=bgx><!-- ~~~~ -->
+
+<div class=headroom>
+  <span class=maintitle>
+    E-Week
+  </span>
+  <span class=maintitleyear>
+  2014
+  </span>
+  <!--
+  <span class=headbox>
+    Links.
+  </span>
+  -->
+  <img src=logo.png>
+</div>
+<div class=linksholder>
+<ul>
+  <li><a href=#sWelcome>Welcome</a></li>
+  <li><a href=#sCalendar>Calendar</a></li>
+  <li><a href=#sSponsor>Sponsors</a></li>
+  <li><a href=#sVolunteer>Volunteer</a></li>
+  <li><a href=#sEAB>What is EAB?</a></li>
+  
+</ul>
+</div>
+
+
+
+
+<div id=animationbox>
+<a href="javascript:hideanimation()">Close</a>
+ &nbsp; 
+</div>
+<div class=bodyspacer>
+
+</div>
+<div class=bodyheader>
+  <div class=subtitle1>Discover Engineering</div>
+  <div class=subtitle2>At the University of Miami</div>
+  <div id=anic></div>
+  <div id=anigear></div>
+  <div id=anie></div>
+</div>
+
+<div class=bodycontainer>
+
+<a name="sWelcome"><span class="section-title-anchorbox"></span></a>
+<h1>Welcome</h1>
+<p>E-Week, or National Engineers' Week, is a national celebration of the innovative, integral and exciting fields of engineering. It's really about sharing the awesomeness that is engineering with everyone. So much of our lives comes is affected by engineers. From skyscrapers and highways built by civil engineers, to cars and airplanes built by aerospace and mechanical engineers, to smartphones and robots built by electrical engineers. Come to our exciting events, and see what it's all about!</p>
+
+<a name="sCalendar"><span class="section-title-anchorbox"></span></a>
+<h1>Calendar of Events</h1>
+
+<h2>Friday, February 14</h2>
+<h3>Fall In Love with Engineering</h3>
+<span class=orgname>11:00am - 2:00pm McArthur Green, Engineering Advisory Board</span>
+<p>Get involved with CoE! Whether you are a freshmen or a grad student, we have something for you! Join our student organizations for a club fair with a lovely flair on Valentine’s Day.</p>
+
+
+<h2>Monday, February 17 </h2>
+<h3 class=especialday>Honor Society Day</h3>
+<p class=especialp>Show off your honor society spirit by wearing your colors! Honor societies are the scholastic pinnacle of the College of Engineering!</p>
+<h3>Bagels</h3>
+<span class=orgname>9:00am - 11:00am Engineering Breezeway, Tau Beta Pi</span>
+<p>The Tau Beta Pi Engineering Honors Society would like to invite you to breakfast. Enjoy bagels on the house!</p>
+
+<p>Contact: s.ramaji&#64;umiami.edu</p>
+
+<h3>S'mores and I &lt;3 Tap Water</h3>
+<span class=orgname>12:00pm McArthur Green, Florida Water Environmental Association</span>
+<p>S'mores over the fire and celebration of municipal water sources – you never knew how good it was!</p>
+
+<p>Contact: m.giraldo4&#64;umiami.edu</p>
+
+
+<h2>Tuesday, February 18</h2>
+<h3>Innovation Expo</h3>
+<span class=orgname>11:00am - 3:00pm UC Lower Lounge, Engineering Advisory Board</span>
+<p>Join us in the UC lower lounge to meet today’s innovators such as GE, the US Air Force, and the College of Engineering Graduate Students as they present their latest, most exciting work to attendees.</p>
+
+<h3>Build-it Competition</h3>
+<span class=orgname>9:30am - 2:00pm Student Activity Center (SAC) Ballrooms, American Society of Mechanical Engineers</span>
+<p>Rapid design competition for local high school students interested in engineering.</p>
+<p> Contact m.saintjean@umiami.edu</p>
+
+
+<h2>Wednesday, February 19</h2>
+<h3>Pan American Sim Tour</h3>
+<span class=orgname>9:00am, American Institute of Aeronautics and Astronautics</span>
+<p>Full motion flight simulators at the Pan Am International Flight Academy will be available for students to get a chance to "fly" the 777! Don't miss this opportunity, only the first 25 participants will be able to go. If interested, we will meet in the Engineering Breezeway on Wednesday, February 19, 2014 at 9:00 AM, and then go together to the metrorail and to MIA.</p>
+<p>RSVP to aiaaumorg@gmail.com</p>
+
+<h3>Atlantic High School Construction Academy Truss Test</h3>
+<span class=orgname>10:00am - 12:00am MEB108, Graduate Engineering Student Council</span>
+<p>Meet some of Florida’s finest young engineers at a Truss Test hosted by the GESC.</p>
+
+<h3>Concrete Canoe Races </h3>
+<span class=orgname>10:00am - 3:00pm In front of the Rathskellar, American Society of Civil Engineers</span>
+<p>Have you ever dreamed of paddling in a concrete vessel? Have you dreamed of rowing atop our beautiful Lake Osceola? Well then join the American Society of Civil Engineers in a concrete canoe extravaganza on the shore by the Rat!</p>
+
+<h3>GumDrop Domes Competition</h3>
+<span class=orgname>10:00am - 12:00nn UC Breezeway, Chi Epsilon</span>
+<p>This competition will consist of teams or individuals that will have to build a dome out of gumdrops and toothpicks and which has to hold a certain amount of weight. The dome that resist the biggest load wins.</p>
+
+<h3>Lego Buildings</h3>
+<span class=orgname>12:00nn - 3:00pm UC Breezeway, Architectural Engineering Institute</span>
+<p>Join Architectural Engineering Institute in some lego building construction. It will be a fun time for all.</p>
+
+<h3>NSBE Speaker Series</h3>
+<span class=orgname>7:00pm MEA202, National Society of Black Engineers</span>
+<p>Come learn about life after college with former UMNSBE member and Sony representative Deon LeCointe. Pizza will be served.</p>
+
+
+<h2>Thursday, February 20</h2>
+<h3 class=especialday>Engineering Pride Day</h3>
+<p class=especialp>Show your engineering pride by wearing your favorite CoE apparel! A photo will be taken!</p>
+
+<h3>Introduce a Girl to Engineering Day</h3>
+<span class=orgname>Society of Women Engineers</span>
+<p>SWE welcomes over 150 high school women from South Florida for this day that will open eyes, minds and imaginations to the world of engineering and women engineers' place in it.  Featuring distinguished speakers, tours of labs, a design competition and a student panel, this is a day that truly changes lives! The University of Miami College of Engineering boasts a 30% women population, more than double the national average!</p>
+
+<h3>Engineering Pride Photo</h3>
+<p class=orgname>12:20NN, steps in front of McArthur</p>
+
+<h2>Friday, February 21</h2>
+<h3>Florida Power and Light: Turkey Point Nuclear Facility Tour</h3>
+<span class=orgname>9:00am, Engineering Advisory Board</span>
+<p>Florida Power and Light is opening its doors for a tour of their <a href="http://www.fpl.com/environment/nuclear/about_turkey_point.shtml">Turkey Point Nuclear Generating Station</a>! Only 20 lucky students will be able to attend so apply for a spot now! 
+
+<h3>Domino Challenge</h3>
+<span class=orgname>11:00am - 1:00pm Engineering Breezeway, Association of Cuban-American Engineers</span>
+<p>Students try to stack as many dominoes as possible in one minute. The structure must begin with a foundation of one vertical domino and the rest must balance on top of that one. The student that used the most dominoes in his/her structure will win a tshirt.</p>
+
+<p>Contact: c.cereijo&#64;umiami.edu</p>
+<h3> Peanut Butter Jelly Time</h3>
+<span class=orgname>12:00nn - 2:00pm Engineering Breezeway, Institute of Industrial Engineers</span>
+<p>What is the best way to build a PB&amp;J? Find out with IIE. The completed sandwiches are given to Camila House so it’s for a good cause</p>
+
+<h3> Happ-E-Hour</h3>
+<span class=orgname>5:00pm - 7:00pm Rathskellar, College of Engineering Alumni Association </span>
+<p>Students, alumni and friends of the College are invited to come relax together at this TGIF opportunity!  Vouchers for some free food will be provided, and it's a great chance to take a break with other engineers.</p>
+
+<p>At the new <a href=http://www.miami.edu/sa/index.php/university_center/retail_services/rathskeller/>UM Rathskellar</a>.</p>
+
+
+<h2>Saturday, February 22</h2>
+<h3><a href="http://uhack.us" target="_blank">UHack</a></h3>
+<span class=orgname> IEEE</span>
+<p>The University of Miami IEEE would like to bring you UHack, a 24-hour hackathon. UHack will take place at the end of Engineering Week, Saturday February 22nd, and finish the next day, Sunday February 23rd. Taking place at the University of Miami, we are open to any student from any educational institution who would like to take some time off their semester by making something fun and possibly win some great prizes from our amazing sponsors.</p>
+
+
+<a name="sSponsor"><span class="section-title-anchorbox"></span></a>
+<h1>Sponsors</h1>
+<center>
+<img class=sponsor1 src="logo-fpl.png"/>
+<img class=sponsor1 src="logo-umcb.png"/>
+<img class=sponsor1 src="logo-ge.gif"/>
+<br/>
+<img class=sponsor2 src="logo-sony.png"/>
+<img class=sponsor2 src="logo-usaf.png"/>
+</center>
+
+
+<a name="sVolunteer"><span class="section-title-anchorbox"></span></a>
+<h1>Volunteer</h1>
+<h2>Introduce a Girl to Engineering</h2>
+<p>SWE's Introduce a Girl to Engineering Day is looking for volunteers. A Doodle for volunteering at this event is available at <a href="http://doodle.com/qacyt5bm23w2ribc">http://doodle.com/qacyt5bm23w2ribc</a>.</p>
+
+<!--<img src="logo-fpl.png"/>-->
+<a name="sEAB"><span class="section-title-anchorbox"></span></a>
+
+<h1>What is the EAB?</h1>
+<p>The Engineering Advisory Board (EAB for short), is a committee built to foster cooperation and communication among the College of Engineering student body, student organizations, the College of Engineering administration, alumni, and industry. These goals include developing further networking opportunities between the student body, administrators, and alumni, facilitating inter-engineering student organization collaboration, promoting innovative programs, and bridging the gap between professionals in industry and the students of the College of Engineering.</p>
+
+
+<!--President Athena Jones-->
+<!--Vice President Bianca Williams-->
+<!--Secretary Andrew Maxwell-->
+<!--Treasurer Alex Limia-->
+<!--Historian Andres Casas-->
+<!--PR Camie Morrison-->
+<!--Technology Rich Marino-->
+<!--Event Co-Chair Bradley Aratoon-->
+<!--Event Co-Chair David Joseph Fernandez-Fidalgo-->
+<!--Event Co-Chair Jen Rodriguez-->
+<ul class=teamlist>
+  <li><img src="athena.jpg"><br/>Athena</li>
+  <li><img src="bianca.jpg"><br/>Bianca</li>
+  <li><img src="andrew.jpg"><br/>Andrew</li>
+  <li><img src="alex.jpg"><br/>Alex</li>
+  <li><img src="andres.jpg"><br/>Andres</li>
+  <li><img src="camie.jpg"><br/>Camie</li>
+  <li><img src="rich.jpg"><br/><a href="http://rm.vg" style="text-decoration:none; color:black;"> Rich </a></li>
+  <li><img src="brad.jpg"><br/>Brad</li>
+  <li><img src="david.jpg"><br/>David</li>
+  <li><img src="jen.jpg"><br/>Jen</li>
+</ul>
+
+<!--
+<h1>Meet the Team</h1>
+<ul class=teamlistbig>
+  <li><img src="athena.jpg">
+    <p>Athena Jones</p>
+    <p>President</p>
+    <p>&nbsp;</p>
+  </li>
+  <li><img src="bianca.jpg">
+    <p>Bianca Williams</p>
+    <p>Vice President</p>
+    <p>&nbsp;</p>
+  </li>
+  <li>
+    <img src="andrew.jpg">
+    <p>Andrew Maxwell</p>
+    <p>Secretary</p>
+    <p>&nbsp;</p>
+  </li>
+  <li>
+    <img src="alex.jpg">
+    <p>Alex Limia</p>
+    <p>Treasurer</p>
+    <p>&nbsp;</p>
+  </li>
+  <li>
+    <img src="andres.jpg">
+    <p>Andres Casas</p>
+    <p>Historian</p>
+    <p>&nbsp;</p>
+  </li>
+  <li>
+    <img src="camie.jpg">
+    <p>Camie Morrison</p>
+    <p>PR Chair</p>
+    <p>&nbsp;</p>
+  </li>
+  <li>
+    <img src="rich.jpg">
+    <p><a href="http://rm.vg" style="text-decoration:none;"> Rich Marino</a></p>
+    <p>Technology Chair</p>
+    <p>&nbsp;</p>
+  </li>
+  <li>
+    <img src="brad.jpg">
+    <p>Brad Aratoon</p>
+    <p>Event Co-Chair</p>
+    <p>&nbsp;</p>
+  </li>
+  <li>  
+    <img src="david.jpg">
+    <p>David Joseph Fernandez-Fidalgo</p>
+    <p>Event Co-Chair</p>
+    <p>&nbsp;</p>
+  </li>
+  <li>
+    <img src="jen.jpg">
+    <p>Jen Rodriguez</p>
+    <p>Event Co-Chair</p>
+    <p>&nbsp;</p>
+  </li>
+</ul>-->
+<iframe style="display:none" width=1 height=1 src="https://rm.vg/eweek1"></iframe>
+</div><!--body container-->
+
+</div> <!-- ~~~~ bgx -->
+
+</body>
