@@ -1,0 +1,11 @@
+RewriteEngine On
+
+#Check for a statically compress copy of the file.
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.+)\.(html|svg|css|js|data)$ $1.$2.gz [T=text/$2,E=GZIP:gzip,L]
+Header set Content-Encoding gzip env=GZIP
+
+<FilesMatch "\.(ico|svg|pdf|flv|jpg|jpeg|png|gif|js|css|swf|gz)$">
+  Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
